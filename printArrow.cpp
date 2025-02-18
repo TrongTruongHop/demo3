@@ -27,7 +27,7 @@ void printArrow(int n,bool left){
         }
         for(int i=1;i<=n-1;i++){
             for(int j=1;j<=i*2+1;j++){
-                if(j<=(i-1)) cout<<" ";
+                if(j<=i) cout<<" ";
                 else cout<<"*";
             }
             cout<<endl;
@@ -36,5 +36,7 @@ void printArrow(int n,bool left){
     }
 }
 int main(){
-
+    int n,left;
+    cin>>n>>left;
+    printArrow(n,left);
 }
